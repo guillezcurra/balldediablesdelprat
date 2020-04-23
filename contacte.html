@@ -37,11 +37,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
-    <form class="w3-row-padding w3-padding-64 w3-container" action="return validateContactForm()">
+    <form class="w3-row-padding w3-padding-64 w3-container"  action="https://formspree.io/xyydrnjd" method="POST"">
       <h2>Formulari de contacte</h2>
       <p>Contacteu amb nosaltres amb aquest formulari.</p>
       <span id="userName-info" class="info"></span>
-      <input id="userName" class="w3-input" type="text" placeholder="Nom"><br>
+      <input id="name" class="w3-input" type="text" placeholder="Nom"><br>
       <span id="userEmail-info" class="info"></span>
       <input id="userEmail" class="w3-input" type="text" placeholder="Adreça electrònica"><br>
       <span id="subject-info" class="info"></span>
@@ -86,7 +86,7 @@ function myFunction() {
 
            $(".info").html("");
            $(".input-field").css('border', '#e0dfdf 1px solid');
-           var userName = $("#userName").val();
+           var userName = $("#name").val();
            var userEmail = $("#userEmail").val();
            var subject = $("#subject").val();
            var content = $("#content").val();
